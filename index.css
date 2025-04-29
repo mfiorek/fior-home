@@ -1,0 +1,72 @@
+* {
+  font-family: "JetBrainsMono Nerd Font Mono", sans-serif;
+}
+
+:root {
+  --bg: #333;
+  --fg: #dcdcdc;
+  --bg-progress: #9f9f9f;
+  --fg-progress: #7aa860;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#clock-container {
+  display: flex;
+  justify-content: center;
+}
+
+#clock {
+  font-size: 10rem;
+}
+
+#progress-bar {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--bg-progress);
+}
+
+#progress-bar-fill {
+  background-color: var(--fg-progress);
+  height: 100%;
+}
+
+#progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--bg);
+  font-weight: 800;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  padding-top: 10rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--fg);
+}
